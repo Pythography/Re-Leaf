@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Boxes</title>
+    <style>
+        /* CSS that applies to all browsers and widths*/
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:800|Open+Sans:400,400i,700,700i&display=swap');
+
+header h2, footer p{
+  font-family: 'Big Shoulders Text', cursive;
+  font-weight: 800;
+}
+.boxes{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* default style for the boxes. suggestion, use border OR background-color not both (or something else if you like.) */
+.box{
+/*   border: 2px solid grey; */
+  padding: 15px;
+  background-color: #ccc;
+}
+
+/*CSS that only applies to browsers with CSS Grid support */
+@supports (grid-area: auto) {
+  
+    /* 
+      Add CSS that applies to all widths before the first media query
+      Suggestion: set base grid here. 
+    */
+  .boxes{
+    display: grid;
+    grid-template-coloumns: 1fr;
+    grid-gap: 20px;
+}
+  
+
+    @media (min-width: 600px){
+      /* phone landscape and tablet portrait */
+      .boxes{
+        grid-template-columns: 1fr 1fr;
+      }
+      .one{
+        grid-column:1/3;
+      }
+      .box{
+        background-color: orange;
+      }
+    } 
+    /*   end min-width 600 */
+
+  
+    @media (min-width: 900px){
+       /* tablet landscape */
+      .boxes{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .one{
+        grid-column:1/4;
+      }
+    }
+    /*   end min-width 900 */
+
+ 
+  
+    @media (min-width: 1200px){
+       /* laptop */
+      .boxes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .one{
+        grid-column:1/5;
+      }
+    }
+    /*   end min-width 1200 */
+  
+  
+    @media (min-width: 1800px){
+       /* desktop */
+      .boxes{
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .one{
+        grid-column:1/7;
+      }
+    }
+    /*   end min-width 1800 */
+}
+/* end @supports */
+        
+        </style>    
+    </head>
+    <body>
+<header>
+  <h2>Boxes</h2>
+</header>
+<div class="boxes"><div class="box one">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cumque tempora a nostrum facere iure numquam, culpa aut, eaque vitae voluptatem sequi veniam voluptatum blanditiis aliquid eius adipisci, doloribus commodi?</p>
+</div>
+<div class="box two">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta officiis, dolore, optio labore perspiciatis facilis! Officiis hic voluptate eius at unde, illo, cupiditate sit labore, veniam autem id minima perferendis!</p>
+</div>
+<div class="box three">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eum, maiores, ea earum, est reprehenderit culpa quibusdam soluta atque incidunt laboriosam dolorum alias sequi nobis quam eos nihil aliquam. Dolorum.</p>
+</div>
+<div class="box four">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In molestias autem quo repellat, consequuntur. Praesentium pariatur fugiat, iste, velit aliquid enim rem, dolor quisquam necessitatibus quo doloribus, nam nostrum perspiciatis.</p>
+</div>
+
+<div class="box five">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque laboriosam facere, reprehenderit itaque similique sit mollitia ipsam asperiores eos ratione exercitationem at harum est illum ab repellendus hic architecto rem.</div>
+  
+<div class="box six">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa laudantium quisquam dolore vitae aperiam saepe, perspiciatis culpa commodi asperiores recusandae nihil molestias adipisci, voluptates omnis deserunt iste quam hic eius!</div>
+  
+<div class="box seven">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt aliquam deserunt recusandae praesentium quae in corrupti ipsa voluptatum voluptas tempora, facilis qui assumenda deleniti, culpa aperiam harum explicabo at!</div>
+  
+<div class="box eight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint, tempore repellendus ipsum quibusdam doloribus culpa, magni laudantium dolore voluptatum nisi qui, delectus vero eligendi a. Nulla cum earum mollitia?</div>
+  
+</div>
+<!-- end boxes -->
+
+<footer>
+  <p>Basic Media Queries Example with CSS Grid.</p>
+</footer>
+    </body>
+<html>
