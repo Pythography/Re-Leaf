@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<hmtl lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe page?</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+/* Font */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color:;
+}
+
+body {
+  color: #379683;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 5px;
+}
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #379683;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: #fff;    
+/*  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);*/
+}
+
+.card_title {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+    .R-Menu{
+        margin: auto;
+        width:500px;
+        display: flex; 
+        list-style: none;
+        justify-content: space-between;
+        }
+        .Menu{
+           background-color: #dadada;
+           padding: 20px;    
+        }
+        .R-Menu a{
+        text-decoration: none;
+        color:#379683;    
+        }
+        .R-Menu a:hover{
+        text-decoration: underline;
+        color:#93BD89;    
+        }
+     @media (max-width:768px){
+    .R-Menu{
+    flex-direction: column;
+     padding:15px;
+    }
+         .R-Menu li{
+        margin: auto;     
+         padding:10px;
+         }     
+            }
+     .site-header h1{
+    margin:1rem;
+    color: #0f3D3D;
+}
+
+.site-header a{    
+text-decoration: none;    
+    font-weight: 900;
+}
+        .site-header h1{
+font-weight: 650;
+font-size: 200%;    
+}
+.site-header h1:hover{
+color: #93BD89;
+}
+
+.site-header {
+    display:flex;
+    flex-wrap:wrap; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menubar{   
+display: flex; 
+list-style: none;
+padding:0;
+justify-content: space-around;    
+}
+        .menubar li{
+        padding-right: 30px;
+        }        
+
+@media (max-width:768px){
+    .menubar{
+    flex-direction: column;
+    padding-right:15px;     
+    }
+}
+
+.menu a {
+color:#0F3D3D;
+;
+}
+.menu a:hover{
+color:#93BD89;
+}
+    </style>
+</head>
+<body>
+        <header class="site-header">
+            <a href="index.html" >  <h1>Re Leaf</h1></a>
+              <nav class="top-nav">
+              <div class="menu" id="menu">    
+              <ul class="menubar" id="menubar">
+              <li><a href="#">Our Philosophy</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+              </div>  
+          </nav>
+    </header>
+<div class="main">
+  <h1>Recipes</h1>
+        <div class="Menu">
+    <ul class="R-Menu">
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Meal Preps</a></li>
+        <li><a href="#">Meal Preps INT</a></li>    
+        </ul>
+    </div>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 1</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 2</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 3</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 4</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 5</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 6</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 7</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+          <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 8</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+          <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://via.placeholder.com/400"></div>
+        <div class="card_content">
+          <h2 class="card_title">Recipe 9</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    </ul>
+</div>
+    </body>
+</hmtl>
